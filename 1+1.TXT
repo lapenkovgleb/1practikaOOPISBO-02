@@ -1,0 +1,37 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+double calculate(float x, char s, float y); 
+
+
+int main() 
+{ 
+float x,y; 
+char s; 
+x=y=0; 
+
+cin»x»s»y; 
+system("cls"); 
+cout«x«s«y«"="«calculate(x,s,y)«endl; 
+system("pause"); 
+return 0; 
+} 
+
+double calculate(float x, char s, float y) 
+{ 
+double summa=0; 
+
+if(s=='+') 
+summa=x+y; 
+else if(s=='-') 
+summa=x-y; 
+else if(s=='/') 
+summa=x/y; 
+else if(s=='*') 
+summa=x*y; 
+else 
+cout«"Unrecognized command"«endl; 
+
+return summa; 
+}
+14:27 19.02.2018
